@@ -1,0 +1,33 @@
+<ion-content>
+  <ion-toolbar class="naranja">
+  <ion-title class="ion-padding-top ion-text-center">
+    <ion-label>
+      <h1>Reestablecer Contraseña</h1>
+    </ion-label>
+    </ion-title></ion-toolbar>
+
+    <ion-card-content class="ion-padding">
+      <img src="assets/logo.PNG">
+      <ion-item>
+        <ion-label position="floating">Usuario:</ion-label>
+        <ion-input type="text" [(ngModel)]="modeloUsuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" >Nueva contraseña:</ion-label>
+        <ion-input type="password" [(ngModel)]="modeloPassword"></ion-input>
+      </ion-item>
+        <ion-row>
+          <ion-col size="12">
+            <ion-button (click)="fusion()"  expand="block" class="ion-margin-top naranja" >Guardar
+              <ion-icon name="save-outline" slot="end"></ion-icon></ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-button (click)="salir()"  expand="block" class="ion-margin-top naranja" >Volver al login
+              <ion-icon name="exit-outline" slot="end"></ion-icon></ion-button>
+          </ion-col>
+        </ion-row>
+
+    </ion-card-content>
+</ion-content>

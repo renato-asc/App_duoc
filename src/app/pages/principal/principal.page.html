@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar class="naranja">
+    <ion-title class="ion-padding-top ion-text-center">Sistema de asistencia Duoc UC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <img src="assets/logo.PNG">
+  <ion-input > {{ texto }} </ion-input>    
+  <ion-button (click)="leerQR()" expand="block" class="ion-margin-top naranja">
+    <ion-icon name="qr-code" slot="end" ></ion-icon>Escanear</ion-button>
+  <ion-button (click)="salir()" expand="block" class="ion-margin-top naranja">
+    <ion-icon name="exit-outline" slot="end"></ion-icon>
+      Salir
+    </ion-button>
+</ion-content>
